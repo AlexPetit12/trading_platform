@@ -6,11 +6,13 @@
  */
 
 #include "TickEvent.h"
+#include "Event.h"
 
 /**
  * \brief default Constructor
  */
-TickEvent::TickEvent()
+TickEvent::TickEvent():
+	Event::Event("TICK")
 {
 }
 
@@ -21,7 +23,7 @@ TickEvent::TickEvent()
  * @param ask_
  */
 TickEvent::TickEvent(std::string ticker_, std::string time_, double bid_, double ask_):
-		m_ticker(ticker_),m_time(time_),m_bid(bid_),m_ask(ask_)
+		m_ticker(ticker_),m_time(time_),m_bid(bid_),m_ask(ask_),Event::Event("TICK")
 {
 }
 

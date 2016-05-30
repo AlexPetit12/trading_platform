@@ -33,6 +33,6 @@ int main(void)
 
 	std::cout <<myTickEvent.getTicker() <<std::endl<< myTickEvent.getTime()<< std::endl << myTickEvent.getBid() << std::endl << myTickEvent.getAsk()<<std::endl;
 
-	myTickEvent.setType("MARKET"); //inherited methods
+	//myTickEvent.setType("MARKET"); //inherited methods
 	std::cout << myTickEvent.getType() <<std::endl;
 }
