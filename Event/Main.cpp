@@ -6,6 +6,7 @@
  */
 
 #include "TickEvent.h"
+#include "BarEvent.h"
 #include <iostream>
 
 int main(void)
@@ -36,5 +37,28 @@ int main(void)
 	//myTickEvent.setType("MARKET"); //inherited methods
 	std::cout << myTickEvent.getType() <<std::endl;
 
-	std::cout << myTickEvent;
+	std::cout << myTickEvent; //overloaded operator <<
+
+	// BAREVENT CLASS BASIC TEST
+
+	BarEvent myEmptyBarEvent;
+	std::cout<<myEmptyBarEvent.getType()<<std::endl;
+
+	BarEvent myFilledBe("GOOG","27-05-2016",1,150.01,155.76,145.88,150.15,102148235,150.15);
+
+	std::cout <<myFilledBe<<std::endl; //verifies operator overload and all accessors as well a getReadablePeriod method.
+
+	myFilledBe.setTicker("IBM");
+	myFilledBe.setTime("28-05-2016");
+	myFilledBe.setPeriod(3600);
+	myFilledBe.setOpenPrice(160);
+	myFilledBe.setHighPrice(200);
+	myFilledBe.setLowPrice(0);
+	myFilledBe.setClosePrice(165);
+	myFilledBe.setAdjClosePrice(165);
+	myFilledBe.setVolume(9999999);
+
+	std::cout<<myFilledBe;
+
+
 }
