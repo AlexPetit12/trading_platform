@@ -7,12 +7,6 @@
 
 #include "Event.h"
 
-/**
- * \brief default Constructor
- */
-Event::Event()
-{
-}
 
 /**
  * @param type_

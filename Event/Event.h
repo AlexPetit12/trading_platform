@@ -16,7 +16,6 @@
  */
 class Event {
 public:
-	Event();
 	Event(std::string type_);
 	virtual ~Event();
 

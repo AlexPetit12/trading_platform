@@ -7,15 +7,6 @@
 #include "BarEvent.h"
 #include "Event.h"
 
-
-/**
- * \brief default Constructor
- */
-BarEvent::BarEvent():
-	Event::Event("BAR")
-{
-}
-
 /**
  * @param ticker_
  * @param time_

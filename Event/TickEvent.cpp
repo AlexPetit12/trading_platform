@@ -9,14 +9,6 @@
 #include "Event.h"
 
 /**
- * \brief default Constructor
- */
-TickEvent::TickEvent():
-	Event::Event("TICK")
-{
-}
-
-/**
  * @param ticker_
  * @param time_
  * @param bid_

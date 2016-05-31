@@ -20,7 +20,6 @@
 class TickEvent : public Event
 {
 public:
-	TickEvent();
 	TickEvent(std::string ticker_, std::string time_, double bid_, double ask_);
 
 	virtual ~TickEvent();
