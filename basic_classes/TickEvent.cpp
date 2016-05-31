@@ -23,7 +23,7 @@ TickEvent::TickEvent():
  * @param ask_
  */
 TickEvent::TickEvent(std::string ticker_, std::string time_, double bid_, double ask_):
-		m_ticker(ticker_),m_time(time_),m_bid(bid_),m_ask(ask_),Event::Event("TICK")
+		Event::Event("TICK"),m_ticker(ticker_),m_time(time_),m_bid(bid_),m_ask(ask_)
 {
 }
 
@@ -96,4 +96,10 @@ double TickEvent::getAsk() const
 void TickEvent::setAsk(double ask_)
 {
 	m_ask = ask_;
+}
+
+std::ostream& operator<<(std::ostream& os,const TickEvent& te)
+{
+	os <<"TYPE: "<<te.getType()<<", TICKER: "<<te.getTicker()<<", TIME: "<<te.getTime()<<", BID: "<<te.getBid()<<", ASK: "<<te.getAsk()<<std::endl;
+	return os;
 }

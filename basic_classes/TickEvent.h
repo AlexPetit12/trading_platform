@@ -9,6 +9,7 @@
 #define TICKEVENT_H_
 
 #include "Event.h"
+#include <iostream>
 
 /**
  * \class TickEvent
@@ -36,6 +37,7 @@ public:
 	double getAsk() const;
 	void setAsk(double ask_);
 
+	friend std::ostream& operator << (std::ostream& os, const TickEvent& te);
 private:
 	std::string m_ticker;
 	std::string m_time;

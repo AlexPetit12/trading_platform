@@ -35,4 +35,6 @@ int main(void)
 
 	//myTickEvent.setType("MARKET"); //inherited methods
 	std::cout << myTickEvent.getType() <<std::endl;
+
+	std::cout << myTickEvent;
 }
