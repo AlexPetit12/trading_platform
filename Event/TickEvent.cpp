@@ -9,6 +9,7 @@
 #include "Event.h"
 
 /**
+ * \brief constructor
  * @param ticker_
  * @param time_
  * @param bid_

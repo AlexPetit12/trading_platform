@@ -8,9 +8,8 @@
 #ifndef TICKEVENT_H_
 #define TICKEVENT_H_
 
-#include "Event.h"
 #include <iostream>
-
+#include "Event.h"
 /**
  * \class TickEvent
  * \brief Handles the event of receiving a new market update tick,

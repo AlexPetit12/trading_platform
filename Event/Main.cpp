@@ -7,7 +7,11 @@
 
 #include "TickEvent.h"
 #include "BarEvent.h"
+#include "SignalEvent.h"
+#include "OrderEvent.h"
+#include "FillEvent.h"
 #include <iostream>
+
 
 int main(void)
 {
@@ -60,5 +64,31 @@ int main(void)
 
 	std::cout<<myFilledBe;
 
+	// Signal Event
+	SignalEvent mySE("BBRY.TO","BOT");
+	mySE.setTicker("BBRY.US");
+	mySE.setAction("LONG");
+	std::cout<<"TICKER: "<<mySE.getTicker()<<" | ACTION: "<<mySE.getAction()<< std::endl;
 
+	//OrderEvent
+	OrderEvent myOrder("SLW.TO","LONG",3342);
+	myOrder.setTicker("ATD/B.TO");
+	myOrder.setAction("SHORT");
+	myOrder.setQty(-884);
+
+	myOrder.printOrder();
+	//calling all getters:
+	std::cout<<"Order: Ticker="<<myOrder.getTicker()<<" Action="<<myOrder.getAction()<<" Qty="<<myOrder.getQty()<<std::endl;
+
+	//FillEvent
+	FillEvent myFE("5-5-2016-16:01:22","AMZ","BOT",8867,"NYSE",88.65,0.0056);
+	myFE.setDateTime("8-5-2016-14:01:22");
+	myFE.setTicker("AMZN");
+	myFE.setAction("BUY");
+	myFE.setQty(22);
+	myFE.setExchange("NASDAQ");
+	myFE.setPrice(722.79);
+	myFE.setCommission(0.0005*myFE.getQty()*myFE.getPrice());
+
+	myFE.printFill();
 }

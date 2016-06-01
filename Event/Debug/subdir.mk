@@ -6,19 +6,28 @@
 CPP_SRCS += \
 ../BarEvent.cpp \
 ../Event.cpp \
+../FillEvent.cpp \
 ../Main.cpp \
+../OrderEvent.cpp \
+../SignalEvent.cpp \
 ../TickEvent.cpp 
 
 OBJS += \
 ./BarEvent.o \
 ./Event.o \
+./FillEvent.o \
 ./Main.o \
+./OrderEvent.o \
+./SignalEvent.o \
 ./TickEvent.o 
 
 CPP_DEPS += \
 ./BarEvent.d \
 ./Event.d \
+./FillEvent.d \
 ./Main.d \
+./OrderEvent.d \
+./SignalEvent.d \
 ./TickEvent.d 
 
 
