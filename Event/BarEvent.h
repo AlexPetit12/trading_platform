@@ -20,7 +20,7 @@ public:
 	//constructors
 	BarEvent(std::string ticker_, std::string time_, int period_,
 			double openPrice_, double highPrice_, double lowPrice_,
-			double closePrice_, long int volume_, double adjClosePrice_);
+			double closePrice_, int volume_, double adjClosePrice_);
 
 	virtual ~BarEvent();
 

@@ -85,9 +85,7 @@ void FillEvent::setCommission(double commission_)
 
 void FillEvent::printFill()
 {
-	std::ostringstream os; //,hourOs;
-
-	//hourOs <<m_time.day()<<"-"<<m_time.month()<<"-"<<m_time.year()<<"-"<<m_time.hour()<<":"<<m_time.minute()<<":"<<m_time.second() ;
+	std::ostringstream os;
 
 	os<<"*** FILLED ***"<<std::endl;
 	os<<"TIME: "<< m_time << std::endl;

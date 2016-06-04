@@ -1,0 +1,40 @@
+Building file: ../BarEvent.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BarEvent.d" -MT"BarEvent.d" -o "BarEvent.o" "../BarEvent.cpp"
+Finished building: ../BarEvent.cpp
+ 
+Building file: ../Event.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Event.d" -MT"Event.d" -o "Event.o" "../Event.cpp"
+Finished building: ../Event.cpp
+ 
+Building file: ../FillEvent.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FillEvent.d" -MT"FillEvent.d" -o "FillEvent.o" "../FillEvent.cpp"
+Finished building: ../FillEvent.cpp
+ 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building file: ../OrderEvent.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OrderEvent.d" -MT"OrderEvent.d" -o "OrderEvent.o" "../OrderEvent.cpp"
+Finished building: ../OrderEvent.cpp
+ 
+Building file: ../SignalEvent.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SignalEvent.d" -MT"SignalEvent.d" -o "SignalEvent.o" "../SignalEvent.cpp"
+Finished building: ../SignalEvent.cpp
+ 
+Building file: ../TickEvent.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TickEvent.d" -MT"TickEvent.d" -o "TickEvent.o" "../TickEvent.cpp"
+Finished building: ../TickEvent.cpp
+ 
+Building target: Event
+Invoking: GCC C++ Linker
+g++  -o "Event"  ./BarEvent.o ./Event.o ./FillEvent.o ./Main.o ./OrderEvent.o ./SignalEvent.o ./TickEvent.o   
+Finished building target: Event
+ 
