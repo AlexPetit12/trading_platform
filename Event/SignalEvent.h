@@ -7,6 +7,7 @@
 
 #ifndef SIGNALEVENT_H_
 #define SIGNALEVENT_H_
+#include "Event.h"
 
 class SignalEvent : public Event
 {

@@ -53,6 +53,10 @@ TESTFILES= \
 # Test Object Files
 TESTOBJECTFILES= \
 	${TESTDIR}/BarEventTest.o \
+	${TESTDIR}/FillEventTest.o \
+	${TESTDIR}/OrderEventTest.o \
+	${TESTDIR}/SignalEventTest.o \
+	${TESTDIR}/TickEventTest.o \
 	${TESTDIR}/tests/EventTest.o \
 	${TESTDIR}/tests/EventTestRunner.o
 
@@ -122,7 +126,7 @@ ${OBJECTDIR}/TickEvent.o: TickEvent.cpp
 .build-tests-conf: .build-tests-subprojects .build-conf ${TESTFILES}
 .build-tests-subprojects:
 
-${TESTDIR}/TestFiles/f1: ${TESTDIR}/BarEventTest.o ${TESTDIR}/tests/EventTest.o ${TESTDIR}/tests/EventTestRunner.o ${OBJECTFILES:%.o=%_nomain.o}
+${TESTDIR}/TestFiles/f1: ${TESTDIR}/BarEventTest.o ${TESTDIR}/tests/EventTest.o ${TESTDIR}/tests/EventTestRunner.o ${TESTDIR}/FillEventTest.o ${TESTDIR}/OrderEventTest.o ${TESTDIR}/SignalEventTest.o ${TESTDIR}/TickEventTest.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles
 	${LINK.cc}   -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS} `cppunit-config --libs`   
 
@@ -143,6 +147,30 @@ ${TESTDIR}/tests/EventTestRunner.o: tests/EventTestRunner.cpp
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/EventTestRunner.o tests/EventTestRunner.cpp
+
+
+${TESTDIR}/FillEventTest.o: FillEventTest.cpp 
+	${MKDIR} -p ${TESTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/FillEventTest.o FillEventTest.cpp
+
+
+${TESTDIR}/OrderEventTest.o: OrderEventTest.cpp 
+	${MKDIR} -p ${TESTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/OrderEventTest.o OrderEventTest.cpp
+
+
+${TESTDIR}/SignalEventTest.o: SignalEventTest.cpp 
+	${MKDIR} -p ${TESTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/SignalEventTest.o SignalEventTest.cpp
+
+
+${TESTDIR}/TickEventTest.o: TickEventTest.cpp 
+	${MKDIR} -p ${TESTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/TickEventTest.o TickEventTest.cpp
 
 
 ${OBJECTDIR}/BarEvent_nomain.o: ${OBJECTDIR}/BarEvent.o BarEvent.cpp 

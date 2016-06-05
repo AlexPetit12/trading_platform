@@ -9,14 +9,16 @@
 #define FILLEVENT_H_
 
 #include "Event.h"
-//#include "Poco/DateTime.h" would be nice tu actually use DateTime object
+//#include "Poco/DateTime.h" would be nice tu actually use DateTime objects
 #include <string>
 
 
 class FillEvent : public Event
 {
 public:
-	FillEvent(std::string time_,std::string ticker_ , std::string action_, int quantity_ , std::string exchange_, double price_,double commission_);
+	FillEvent(std::string time_,std::string ticker_ , std::string action_, 
+                int quantity_ , std::string exchange_, double price_,
+                double commission_);
 
 	std::string getDateTime()const;
 	void setDateTime(std::string time_);

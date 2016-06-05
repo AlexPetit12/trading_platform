@@ -39,6 +39,14 @@
         <itemPath>tests/EventTest.cpp</itemPath>
         <itemPath>tests/EventTest.h</itemPath>
         <itemPath>tests/EventTestRunner.cpp</itemPath>
+        <itemPath>FillEventTest.cpp</itemPath>
+        <itemPath>FillEventTest.h</itemPath>
+        <itemPath>OrderEventTest.cpp</itemPath>
+        <itemPath>OrderEventTest.h</itemPath>
+        <itemPath>SignalEventTest.cpp</itemPath>
+        <itemPath>SignalEventTest.h</itemPath>
+        <itemPath>TickEventTest.cpp</itemPath>
+        <itemPath>TickEventTest.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -74,19 +82,35 @@
       </item>
       <item path="FillEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="FillEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FillEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OrderEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OrderEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="OrderEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OrderEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SignalEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SignalEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="SignalEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SignalEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="TickEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TickEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TickEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TickEventTest.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles/f1">
         <cTool>
@@ -145,19 +169,35 @@
       </item>
       <item path="FillEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="FillEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FillEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OrderEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OrderEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="OrderEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OrderEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SignalEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SignalEvent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="SignalEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SignalEventTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="TickEvent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TickEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TickEventTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TickEventTest.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles/f1">
         <cTool>
