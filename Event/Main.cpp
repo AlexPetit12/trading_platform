@@ -5,11 +5,11 @@
  *      Author: fredaugermorin
  */
 
-#include "/home/fredaugermorin/trading_platform/Event/TickEvent.h"
-#include "/home/fredaugermorin/trading_platform/Event/BarEvent.h"
-#include "/home/fredaugermorin/trading_platform/Event/SignalEvent.h"
-#include "/home/fredaugermorin/trading_platform/Event/OrderEvent.h"
-#include "/home/fredaugermorin/trading_platform/Event/FillEvent.h"
+#include "TickEvent.h"
+#include "BarEvent.h"
+#include "SignalEvent.h"
+#include "OrderEvent.h"
+#include "FillEvent.h"
 #include <iostream>
 
 
