@@ -18,13 +18,13 @@
  * @param volume_
  * @param adjClosePrice_
  */
-BarEvent::BarEvent(std::string ticker_, std::string time_, int period_,
-		double openPrice_, double highPrice_, double lowPrice_,
-		double closePrice_, int volume_, double adjClosePrice_):
-				Event::Event("BAR"), m_ticker(ticker_), m_time(time_),
-				m_period(period_), m_openPrice(openPrice_), m_highPrice(highPrice_),
-				m_lowPrice(lowPrice_), m_closePrice(closePrice_), m_volume(volume_),
-				m_adjClosePrice(adjClosePrice_)
+BarEvent::BarEvent(const std::string& ticker_, std::string time_, int period_,
+                    double openPrice_, double highPrice_, double lowPrice_,
+                    double closePrice_, int volume_, double adjClosePrice_):
+                        Event::Event("BAR"), m_ticker(ticker_), m_time(time_),
+                        m_period(period_), m_openPrice(openPrice_), m_highPrice(highPrice_),
+                        m_lowPrice(lowPrice_), m_closePrice(closePrice_), m_volume(volume_),
+                        m_adjClosePrice(adjClosePrice_)
 {
 }
 

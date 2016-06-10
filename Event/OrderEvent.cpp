@@ -14,7 +14,8 @@
  * @param quantity
  */
 OrderEvent::OrderEvent(std::string ticker_, std::string action_, int quantity_):
-	Event::Event("ORDER"),m_ticker(ticker_),m_action(action_),m_quantity(quantity_)
+	Event::Event("ORDER"),m_ticker(ticker_),
+        m_action(action_),m_quantity(quantity_)
 {
 }
 

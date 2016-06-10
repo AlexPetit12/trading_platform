@@ -17,10 +17,10 @@
 class BarEvent : public Event
 {
 public:
-	//constructors
-	BarEvent(std::string ticker_, std::string time_, int period_,
-			double openPrice_, double highPrice_, double lowPrice_,
-			double closePrice_, int volume_, double adjClosePrice_);
+	//constructor
+	BarEvent(const std::string& ticker_ , const std::string& time_,const int& period_,
+		const double& openPrice_, const double& highPrice_, const double& lowPrice_,
+		const double& closePrice_,const int& volume_,const double& adjClosePrice_);
 
 	virtual ~BarEvent();
 
