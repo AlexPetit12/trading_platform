@@ -11,7 +11,7 @@
 /**
  * @param type_
  */
-Event::Event(std::string type_):
+Event::Event(const std::string& type_):
 		m_type(type_)
 {
 }
@@ -34,7 +34,7 @@ std::string Event::getType() const
 /**
  * @param type_
  */
-void Event::setType(std::string type_)
+void Event::setType(const std::string& type_)
 {
 	m_type = type_;
 }

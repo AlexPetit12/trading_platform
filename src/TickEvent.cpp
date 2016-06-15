@@ -15,8 +15,10 @@
  * @param bid_
  * @param ask_
  */
-TickEvent::TickEvent(std::string ticker_, std::string time_, double bid_, double ask_):
-		Event::Event("TICK"),m_ticker(ticker_),m_time(time_),m_bid(bid_),m_ask(ask_)
+TickEvent::TickEvent(const std::string& ticker_,const std::string& time_, 
+                const double& bid_,const double& ask_):
+		Event::Event("TICK"),m_ticker(ticker_),m_time(time_),
+                m_bid(bid_),m_ask(ask_)
 {
 }
 
@@ -38,7 +40,7 @@ std::string TickEvent::getTicker() const
 /**
  * @param ticker_
  */
-void TickEvent::setTicker(std::string ticker_)
+void TickEvent::setTicker(const std::string& ticker_)
 {
 	m_ticker = ticker_;
 }
@@ -54,7 +56,7 @@ std::string TickEvent::getTime() const
 /**
  * @param time_
  */
-void TickEvent::setTime(std::string time_)
+void TickEvent::setTime(const std::string& time_)
 {
 	m_time = time_;
 }
@@ -70,7 +72,7 @@ double TickEvent::getBid() const
 /**
  * @param bid_
  */
-void TickEvent::setBid(double bid_)
+void TickEvent::setBid(const double& bid_)
 {
 	m_bid = bid_;
 }
@@ -86,7 +88,7 @@ double TickEvent::getAsk() const
 /**
  * @param ask_
  */
-void TickEvent::setAsk(double ask_)
+void TickEvent::setAsk(const double& ask_)
 {
 	m_ask = ask_;
 }

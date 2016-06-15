@@ -16,11 +16,11 @@
  */
 class Event {
 public:
-	Event(std::string type_);
+	Event(const std::string& type_);
 	virtual ~Event();
 
 	std::string getType() const;
-	void setType(std::string type_);
+	void setType(const std::string& type_);
 
 protected:
 	std::string m_type;

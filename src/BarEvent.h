@@ -27,32 +27,32 @@ public:
 	friend std::ostream& operator << (std::ostream& os, const BarEvent& be_ );
 
 	std::string getTicker() const;
-	void setTicker(std::string ticker_);
+	void setTicker(const std::string& ticker_);
 
 	std::string getTime() const;
-	void setTime(std::string time_);
+	void setTime(const std::string& time_);
 
 	int getPeriod() const;
-	void setPeriod(int period_);
+	void setPeriod(const int& period_);
 	std::string getReadablePeriod() const;
 
 	double getOpenPrice() const;
-	void setOpenPrice(double openPrice_);
+	void setOpenPrice(const double& openPrice_);
 
 	double getHighPrice() const;
-	void setHighPrice(double highPrice_);
+	void setHighPrice(const double& highPrice_);
 
 	double getLowPrice() const;
-	void setLowPrice(double lowPrice_);
+	void setLowPrice(const double& lowPrice_);
 
 	double getClosePrice() const;
-	void setClosePrice(double closePrice_);
+	void setClosePrice(const double& closePrice_);
 
 	int getVolume() const;
-	void setVolume(int volume_);
+	void setVolume(const int& volume_);
 
 	double getAdjClosePrice() const;
-	void setAdjClosePrice(double adjClosesPrice_);
+	void setAdjClosePrice(const double& adjClosePrice_);
 
 
 private:

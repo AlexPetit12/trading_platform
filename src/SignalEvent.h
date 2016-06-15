@@ -12,15 +12,15 @@
 class SignalEvent : public Event
 {
 public:
-	SignalEvent(std::string ticker_, std::string action_); //constructor
+	SignalEvent(const std::string& ticker_,const std::string& action_); //constructor
 
 	virtual ~SignalEvent(); //Destructor
 
 	std::string getTicker() const;
-	void setTicker(std::string ticker_);
+	void setTicker(const std::string& ticker_);
 
 	std::string getAction() const;
-	void setAction(std::string action_);
+	void setAction(const std::string& action_);
 
 private:
 	std::string m_ticker;

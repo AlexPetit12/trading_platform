@@ -9,37 +9,38 @@
 #define FILLEVENT_H_
 
 #include "Event.h"
-//#include "Poco/DateTime.h" would be nice tu actually use DateTime objects
+//#include "Poco/DateTime.h" would be nice to actually use DateTime objects
 #include <string>
 
 
 class FillEvent : public Event
 {
 public:
-	FillEvent(std::string time_,std::string ticker_ , std::string action_, 
-                int quantity_ , std::string exchange_, double price_,
-                double commission_);
+	FillEvent(const std::string& time_,const std::string& ticker_ , 
+                const std::string& action_,const int& quantity_ , 
+                const std::string& exchange_,const double& price_,
+                const double& commission_);
 
 	std::string getDateTime()const;
-	void setDateTime(std::string time_);
+	void setDateTime(const std::string& time_);
 
 	std::string getTicker() const;
-	void setTicker(std::string ticker_);
+	void setTicker(const std::string& ticker_);
 
 	std::string getAction()const;
-	void setAction(std::string);
+	void setAction(const std::string& action_);
 
 	int getQty()const;
-	void setQty(int quantity_);
+	void setQty(const int& quantity_);
 
 	std::string getExchange()const;
-	void setExchange(std::string exchange_);
+	void setExchange(const std::string& exchange_);
 
 	double getPrice()const;
-	void setPrice(double price_);
+	void setPrice(const double& price_);
 
 	double getCommission()const;
-	void setCommission(double commission_);
+	void setCommission(const double& commission_);
 
 	void printFill();
 private:

@@ -16,18 +16,19 @@ class OrderEvent : public Event
 {
 public:
 
-	OrderEvent(std::string ticker_, std::string action_, int quantity_); //constructor
+	OrderEvent(const std::string& ticker_,const std::string& action_,
+                const int& quantity_); //constructor
 
 	virtual ~OrderEvent(); //Destructor
 
 	std::string getTicker()const;
-	void setTicker(std::string ticker_);
+	void setTicker(const std::string& ticker_);
 
 	std::string getAction()const;
-	void setAction(std::string action_);
+	void setAction(const std::string& action_);
 
 	int getQty()const;
-	void setQty(int quantitty_);
+	void setQty(const int& quantity_);
 
 	void printOrder()const;
 

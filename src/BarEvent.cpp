@@ -40,7 +40,7 @@ std::string BarEvent::getTicker() const
 	return m_ticker;
 }
 
-void BarEvent::setTicker(std::string ticker_)
+void BarEvent::setTicker(const std::string& ticker_)
 {
 	m_ticker = ticker_;
 }
@@ -50,7 +50,7 @@ std::string BarEvent::getTime() const
 	return m_time;
 }
 
-void BarEvent::setTime(std::string time_)
+void BarEvent::setTime(const std::string& time_)
 {
 	m_time = time_;
 }
@@ -60,7 +60,7 @@ int BarEvent::getPeriod() const
 	return m_period;
 }
 
-void BarEvent::setPeriod(int period_)
+void BarEvent::setPeriod(const int& period_)
 {
 	m_period = period_;
 }
@@ -98,7 +98,7 @@ double BarEvent::getOpenPrice() const
 	return m_openPrice;
 }
 
-void BarEvent::setOpenPrice(double openPrice_)
+void BarEvent::setOpenPrice(const double& openPrice_)
 {
 	m_openPrice = openPrice_;
 }
@@ -107,7 +107,7 @@ double BarEvent::getHighPrice() const
 {
 	return m_highPrice;
 }
-void BarEvent::setHighPrice(double highPrice_)
+void BarEvent::setHighPrice(const double& highPrice_)
 {
 	m_highPrice = highPrice_;
 }
@@ -117,7 +117,7 @@ double BarEvent::getLowPrice() const
 	return m_lowPrice;
 }
 
-void BarEvent::setLowPrice(double lowPrice_)
+void BarEvent::setLowPrice(const double& lowPrice_)
 {
 	m_lowPrice = lowPrice_;
 }
@@ -127,7 +127,7 @@ double BarEvent::getClosePrice() const
 	return m_closePrice;
 }
 
-void BarEvent::setClosePrice(double closePrice_)
+void BarEvent::setClosePrice(const double& closePrice_)
 {
 	m_closePrice = closePrice_;
 }
@@ -137,7 +137,7 @@ int BarEvent::getVolume() const
 	return m_volume;
 }
 
-void BarEvent::setVolume(int volume_)
+void BarEvent::setVolume(const int& volume_)
 {
 	m_volume = volume_;
 }
@@ -147,7 +147,7 @@ double BarEvent::getAdjClosePrice() const
 	return m_adjClosePrice;
 }
 
-void BarEvent::setAdjClosePrice(double adjClosePrice_)
+void BarEvent::setAdjClosePrice(const double& adjClosePrice_)
 {
 	m_adjClosePrice = adjClosePrice_;
 }

@@ -19,21 +19,22 @@
 class TickEvent : public Event
 {
 public:
-	TickEvent(std::string ticker_, std::string time_, double bid_, double ask_);
+	TickEvent(const std::string& ticker_,const std::string& time_, 
+                const double& bid_,const double& ask_);
 
 	virtual ~TickEvent();
 
 	std::string getTicker() const;
-	void setTicker(std::string ticker_);
+	void setTicker(const std::string& ticker_);
 
 	std::string getTime() const;
-	void setTime(std::string time_);
+	void setTime(const std::string& time_);
 
 	double getBid() const;
-	void setBid(double bid_);
+	void setBid(const double& bid_);
 
 	double getAsk() const;
-	void setAsk(double ask_);
+	void setAsk(const double& ask_);
 
 	friend std::ostream& operator << (std::ostream& os, const TickEvent& te);
 private:
